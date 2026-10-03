@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_contacts",
+  "info": {
+    "displayName": "Contact",
+    "icon": "phone",
+    "description": "Contact details and map"
+  },
+  "options": {},
+  "attributes": {
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "text"
+    },
+    "openingHours": {
+      "type": "string"
+    },
+    "googleMapsUrl": {
+      "type": "string"
+    },
+    "mapEmbedUrl": {
+      "type": "text"
+    }
+  }
+}

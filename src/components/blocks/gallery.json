@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_blocks_gallerys",
+  "info": {
+    "displayName": "Gallery",
+    "icon": "slideshow",
+    "description": "Grid of photos"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "anchor": {
+      "type": "string",
+      "regex": "^[a-z0-9-]*$"
+    }
+  }
+}

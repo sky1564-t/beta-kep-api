@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_menu_links",
+  "info": {
+    "displayName": "Menu link",
+    "icon": "link",
+    "description": "Sub-menu link"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_schedule_items",
+  "info": {
+    "displayName": "Schedule item",
+    "icon": "clock",
+    "description": "One row of a timetable"
+  },
+  "options": {},
+  "attributes": {
+    "time": {
+      "type": "string",
+      "required": true
+    },
+    "activity": {
+      "type": "string",
+      "required": true
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}

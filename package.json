@@ -1,0 +1,44 @@
+{
+  "name": "kepvipassana-cms",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Backend + admin dashboard for kepvipassana.org (Strapi 5, PostgreSQL)",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+  },
+  "dependencies": {
+    "@strapi/database": "5.55.1",
+    "@strapi/plugin-users-permissions": "5.55.1",
+    "@strapi/provider-upload-aws-s3": "5.55.1",
+    "@strapi/strapi": "5.55.1",
+    "@strapi/utils": "5.55.1",
+    "pg": "8.20.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.30.3",
+    "sharp": "0.35.3",
+    "styled-components": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20.0.0 <=26.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "9f9518d5-3301-49f7-8367-3bf88ae2925d",
+    "installId": "9deb745700544fc431a9a7f05f6f559204a19c6e2af1d4a1e5eac206d8cfaab0"
+  }
+}

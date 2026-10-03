@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_blocks_collection_lists",
+  "info": {
+    "displayName": "Collection list",
+    "icon": "stack",
+    "description": "Show latest posts / upcoming courses / albums / teachers"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "collection": {
+      "type": "enumeration",
+      "enum": [
+        "posts",
+        "courses",
+        "albums",
+        "teachers"
+      ],
+      "required": true,
+      "default": "posts"
+    },
+    "limit": {
+      "type": "integer",
+      "default": 3,
+      "min": 1,
+      "max": 24
+    },
+    "anchor": {
+      "type": "string",
+      "regex": "^[a-z0-9-]*$"
+    }
+  }
+}
