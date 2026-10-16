@@ -11,7 +11,15 @@ const hostOf = (url?: string) => {
 const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Middlewares => {
   // lets the admin panel show images stored on R2/S3
   const mediaHost = hostOf(env('S3_PUBLIC_URL'));
-  const mediaSources = ["'self'", 'data:', 'blob:', 'market-assets.strapi.io', ...(mediaHost ? [mediaHost] : [])];
+  const mediaSources = [
+    "'self'", 
+    'data:', 
+    'blob:', 
+    'market-assets.strapi.io', 
+    '*.cloudflarestorage.com', 
+    '*.r2.dev', 
+    ...(mediaHost ? [mediaHost] : [])
+  ];
 
   return [
     'strapi::logger',

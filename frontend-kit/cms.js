@@ -57,6 +57,7 @@ export function createCms({ baseUrl = 'http://localhost:1337', locale = 'km', fe
     }
     return json;
   }
+  
 
   async function list(collection, { locale: lang, page = 1, pageSize = 12, limit, sort, filters, ...extra } = {}) {
     const json = await request(`/${collection}`, {
@@ -131,4 +132,6 @@ export function createCms({ baseUrl = 'http://localhost:1337', locale = 'km', fe
     /** { name, email?, phone?, subject?, message, website? (hidden honeypot, keep empty) } */
     sendContact: (form) => request('/contact', {}, { method: 'POST', body: JSON.stringify(form) }),
   };
+
 }
+

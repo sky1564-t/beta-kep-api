@@ -117,7 +117,7 @@ const LIST_VIEWS: Record<string, { columns: string[]; sortBy?: string; order?: '
     sortBy: 'startDate',
     order: 'ASC',
   },
-  'api::album.album': { columns: ['id', 'cover', 'title', 'date'], sortBy: 'date', order: 'DESC' },
+  'api::album.album': { columns: ['id', 'title', 'cover', 'photos', 'date'], sortBy: 'date', order: 'DESC' },
   'api::teacher.teacher': { columns: ['id', 'photo', 'name', 'role', 'sortOrder'], sortBy: 'sortOrder', order: 'ASC' },
   'api::contact-message.contact-message': {
     columns: ['id', 'name', 'email', 'phone', 'subject', 'state', 'createdAt'],
